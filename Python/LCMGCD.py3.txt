@@ -1,0 +1,10 @@
+#lcm and gcd
+import math
+t=int(input())
+for i in range(t):
+    a=input()
+    a=a.split(' ')
+    gcd=math.gcd(int(a[0]),int(a[1]))
+    lcm=((int(a[0])*int(a[1]))//gcd)
+    print(gcd)
+    print(lcm)

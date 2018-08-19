@@ -1,0 +1,13 @@
+#Power of 2
+import math
+t=int(input())
+for i in range(t):
+    a=int(input())
+    if(a==0):
+     print('True')
+    else: 
+     sum=a&(a-1)
+     if(sum==0):
+      print('True')
+     else:
+      print('False')

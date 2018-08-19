@@ -1,0 +1,25 @@
+#Power of another number
+import math
+
+def ispow(x,y):
+    if(x==1):
+        return (y==1)
+    if(x==0):
+        return False
+    else:
+        p=1
+        while(p<y):
+            p=p*x
+        if(p==y):
+            return True
+        else:
+            return False
+    
+t=int(input())
+for i in range(t):
+    a=int(input())
+    b=int(input())
+    if(ispow(a,b)):
+        print(1)
+    else:
+        print(0)
