@@ -1,0 +1,15 @@
+import math
+t=(int(input()))
+for i in range(t):
+   h=(int(input()))
+   m=(int(input()))
+   if(h==12):
+    h_ang=m*0.5
+   if(m==60):
+    h_ang=h*30
+   else:
+    h_ang=(h*30)+(m*0.5)
+   m_ang = m*6;
+   ang=abs(h_ang-m_ang)
+   hmang=min((360-ang),ang)
+   print(hmang)
